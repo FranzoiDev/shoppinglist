@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <div class="input-container">
+            <input type="text" id="itemInput" placeholder="Digite o item...">
+            <input type="number" id="precoInput" placeholder="Preço">
+            <button onclick="adicionarItem()">Adicionar</button>
+        </div>
+        <ul id="listaCompras"></ul>
+        <div class="total-container">
+            <button onclick="calcularTotal()">Calcular Total</button>
+            <span id="total">Total: R$ 0.00</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
